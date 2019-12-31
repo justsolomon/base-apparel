@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 36%, 70%);
+    background-image: url(images/bg-pattern-desktop.svg);
+    margin: auto;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+header {
+    margin: 3rem 0 0 6rem;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+}
+
+.text-container {
+    width: 30%;
+    margin: auto;
+    margin-top: -1rem;
+    margin-right: 15rem;
+}
+
+.image-container {
+    margin-top: -12rem;
+}
+
+header {
+    margin-bottom: 5em;
+    position: relative;
+}
+
+.description-header {
+    margin-bottom: 2rem;
+}
+
+.normal-text,
+.bold-text {
+    letter-spacing: .8rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.normal-text {
+    font-weight: 300;
+}
+
+.bold-text {
+    font-weight: 600;
+    color: black;
+}
+
+.description-content {
+    font-weight: 400;
+}
+
+form {
+    border-color: hsl(0, 36%, 70%);
+    display: flex;
+    align-items: center;
+}
+
+#email-input {
+    height: 3.5rem;
+    width: 100%;
+    border-radius: 3rem;
+    padding: 1.5rem;
+    color: hsl(0, 36%, 70%);
+    border: 1px solid hsl(0, 36%, 70%);
+    font-size: 1.1rem;
+}
+
+.error-msg {
+    margin: 6rem 0 0 -25rem;
+    width: 100%;
+}
+
+#email-input~.error-msg {
+    opacity: 0;
+}
+
+#email-input:invalid~.error-msg {
+    opacity: 1;
+}
+
+form button {
+    margin-left: -6rem;
+    background: linear-gradient( 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 3rem;
+    border: 1px solid hsl(0, 36%, 70%);
+    height: 3.8rem;
+    width: 30%;
+    cursor: pointer;
+}
+
+form button:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+@media (max-width: 675px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 15em;
+    }
+    header {
+        margin: 2rem 0 0 2rem;
+    }
+    .image-container {
+        width: 100%;
+    }
+    .text-container {
+        width: 85%;
+        margin: auto;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .normal-text,
+    .bold-text {
+        font-size: 3rem;
+    }
+    .error-msg {
+        font-size: 1rem;
+        margin: 6rem 0 1rem -23rem;
+    }
+    form button {
+        margin-left: -5rem;
+        width: 28%;
+    }
+}

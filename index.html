@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg">
+    </header>
+    <div class="container">
+        <div class="text-container">
+            <main>
+                <div class="description-header">
+                    <div class="normal-text">We're</div>
+                    <div class="bold-text">coming</div>
+                    <div class="bold-text">soon</div>
+                </div>
+                <div class="description-content">
+                    Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+                </div>
+                <form action="#" method="POST">
+                    <input id="email-input" type="email" name="user_email" placeholder="Email Address" required>
+                    <button type="submit" class="submit-button"><img src="images/icon-arrow.svg"></button>
+                    <p class="error-msg">Please provide a valid email</p>
+                </form>
+            </main>
+        </div>
+        <div class="image-container">
+            <img srcset="
+            images/hero-desktop.jpg 610w,
+            images/hero-mobile.jpg 375w
+            " sizes="(max-width: 600px) 375px,
+            610px" src="images/hero-desktop.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://twitter.com/gbsolomon1" target="_blank">Solomon Balogun</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
